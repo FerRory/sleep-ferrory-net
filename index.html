@@ -37,7 +37,7 @@ function showDay(day)
 }
 function showHistory() 
 {
-  currentDay = new Date().getDay();
+  currentDay = new Date().getDay()-1;
   document.getElementById('history').innerHTML = "<h2>History</h2>";
   for(let i =currentDay; i>=0; i--) {
   document.getElementById('history').innerHTML += showDay(i);
